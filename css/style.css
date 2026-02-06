@@ -1,0 +1,21 @@
+
+
+/* Vanilla CSS */
+.frosted-glass-bg {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+}
+.frosted-glass-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top right, rgba(191, 219, 254, 0.7), rgba(233, 213, 255, 0.7));
+}
+.frosted-glass-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(40px) saturate(150%);
+}
